@@ -1,0 +1,305 @@
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: .8rem;
+    color: #46433A;
+    background-color: #fdfdfd;
+    line-height: 1.7;
+    overflow-x:hidden
+}
+
+h1 {
+    font-size:2em
+}
+
+h2 {
+    font-size:1.5em
+}
+
+h6 {
+    font-size: 11px;
+    font-weight:100
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Rubik", sans-serif
+}
+
+header {
+    min-width: 250px;
+    flex: 0 0 auto;
+    padding:0px 20px 50px 20px
+}
+
+main {
+    flex: 1 1 auto;
+    margin:0 10%
+}
+
+main > h1 {
+    margin-top:0
+}
+
+.note {
+    font-size:.5em
+}
+
+ul.minimal {
+    list-style-type: none;
+    padding: 0;
+    margin:0
+}
+
+ul.social {
+    padding: 0px;
+    margin: 5px auto;
+    display: block;
+    text-align:right
+}
+
+ul.social li {
+    display: inline-block;
+    margin:0 5%
+}
+
+i {
+    opacity:.75
+}
+
+i:hover {
+    opacity:1
+}
+
+h2 {
+    margin:30px 0px 5px 0px
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image:linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25), transparent)
+}
+
+.sidebar-nav {
+    margin: auto;
+    margin-top: 30px;
+    display:flex
+}
+
+.sidebar-nav-item {
+    margin: 5px;
+    flex:1 1 auto
+}
+
+.wrapper {
+    display: flex;
+    max-width: 65rem;
+    padding: 5rem 1rem 5rem 1rem;
+    margin: auto;
+    justify-content:center
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #CE534D;
+    text-decoration:none
+}
+
+a:hover {
+    text-decoration:underline
+}
+
+a#name-link {
+    color:#46433A
+}
+
+.author-container h1 {
+    font-size: 2.8em;
+    margin-top: 0;
+    margin-bottom:0
+}
+
+.pub {
+    margin:15px 0px
+}
+
+.pub p {
+    margin:0
+}
+
+.pub-description, .pub > a {
+    font-size:.7rem
+}
+
+.project {
+    margin-top:15px
+}
+
+.project-title {
+    font-weight: bold;
+    font-size:14px
+}
+
+.project-description {
+    margin-top: 3px;
+    display:inline
+}
+
+.post {
+    margin-bottom:20px
+}
+
+.post-title {
+    font-weight: bold;
+    font-size:14px
+}
+
+.post-date {
+    font-size: 10px;
+    color: #adadad;
+    padding:4px
+}
+
+.post-subtitle {
+    margin-top:3px
+}
+
+.post-footnote {
+    font-size: 12px;
+    color: #adadad;
+    font-style:italic
+}
+
+img + em {
+    font-size: 12px;
+    color: #adadad;
+    font-style: italic;
+    display: block;
+    text-align:center
+}
+
+.text-content-container {
+    max-width: 700px;
+    margin-bottom:150px
+}
+
+#gallery {
+    column-gap: 10px;
+    line-height:2
+}
+
+#gallery img {
+    width:100%
+}
+
+#gallery .placeholder:hover {
+    opacity: .9;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition:opacity .2s ease-out
+}
+
+.placeholder {
+    background-color: #background-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    break-inside:avoid-column
+}
+
+.placeholder img {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition:opacity 0.5s linear
+}
+
+.placeholder img.loaded {
+    opacity:1
+}
+
+.img-small {
+    filter: blur(50px);
+    transform:scale(1)
+}
+
+@media (max-width: 900px) {
+    .text-content-container img {
+        width: 100%;
+        margin-top:20px
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        justify-content:flex-start
+    }
+
+    .sidebar-nav {
+        flex-direction:row
+    }
+
+    header {
+        text-align:center
+    }
+
+    main {
+        flex: 1 1 auto;
+        margin: 0 10%;
+        margin-bottom:60px
+    }
+
+    ul.social {
+        width: 50%;
+        text-align:center
+    }
+}
+
+@media (min-width: 900px) {
+    .text-content-container img {
+        width: 150%;
+        margin-top: 20px;
+        transform:translateX(-15%)
+    }
+
+    .text-content-container img.fit-width {
+        width: 100%;
+        margin-top: 20px;
+        transform:translateX(0%)
+    }
+
+    .wrapper {
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .sidebar-nav {
+        flex-direction:column
+    }
+
+    header {
+        float: left;
+        text-align:right
+    }
+
+    main {
+        margin:0 5%
+    }
+
+    #gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count:2
+    }
+}
+
+@media (max-width: 1200px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1
+    }
+}
