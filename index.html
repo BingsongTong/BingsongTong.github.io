@@ -1,103 +1,247 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>Bingsong Tong</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingsong Tong &#8226; </title>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Bingsong</b> Tong</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#coursework" class="w3-bar-item w3-button">Coursework</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 
-    <link rel="apple-touch-icon" href="/images/compass.png"/>
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://jessylin.com/favicon.ico" />
-
-    <link rel="stylesheet" href="/assets/normalize.css">
-    <link rel="stylesheet" href="/assets/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:500|Lora|Average|Neuton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap" rel="stylesheet">
-
-
-    <link rel="canonical" href="https://">
-
-    <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0BTECR8DX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-D0BTECR8DX');
-    </script> -->
-    <!-- 上面是陈卓伟的跟踪代码 -->
-
-</head>
-
-<div class="wrapper">
-    <header>
-        <div class="author-container"><h1><a id="name-link" href="/">Bingsong Tong</a></h1></div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="Piegon Point.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-left w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-transparent w3-opacity-off"><b>Bingsong Tong</b></span> <!-- <span class="w3-xxxlarge w3-text-white">Sienko</span> --></h1>
+  </div>
+</header>
 
 
-        <img src="/images/tbs.jpg" width="175" />
+  <!-- Container (About Section) -->
+<div class="w3-container w3-center w3-padding-64" id="about">	
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-size:25px">ABOUT ME</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="GoldenGateBridge.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="450">
+    </div>
 
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <p style="font-size:20px;" align=left>
+      Hello, I am Bingsong! I'm currently an undergraduate visiting student majoring in 
+       Computer Science at the <a href='https://berkeley.edu'>University of 
+        California, Berkeley</a>.
+        Upon completing my studies here, I'm set to graduate at 2025, with a 
+        Bachelor's degree in Computer Science from 
+        the <a href='https://www.xjtu.edu.cn'>Xi'an Jiaotong University</a>. I love 
+        playing badminton, swimming, eating all kinds of food. Here's what I've done 
+        during the past few years!
+      </p>
+      <a href="CV__Bingsong Tong.pdf" target="_blank">
+    <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> R&eacute;sum&eacute;
+      </button></a>
+    </div>
+  </div>
 
-        <ul class="social">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-            <li><a href="mailto:bingsongtong@stu.xjtu.edu.cn" target="_blank"><i class="far fa-envelope"></i></a></li>
-            <li><a href="//github.com/BingsongTong"><i class="fab fa-github"></i></a></li>
-            <li class="sidebar-nav-item"><a href="/cv.pdf">[cv]</a></li>
-            <li><a href="https://instagram.com/davidt8886"><i class="fab fa-instagram"></i></a></li>
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Create three equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
 
-            <!--            <li><a href="//twitter.com/"><i class="fab fa-twitter"></i></a></li>-->
-<!--            <li><a href="//linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a></li>-->
-        </ul>
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-<!--        <ul class="sidebar-nav minimal">-->
-<!--            <li class="sidebar-nav-item"><a href="/cv.pdf">[cv]</a></li>-->
-<!--        </ul>-->
-    </header>
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+<!-- <div class="w3-container w3-border-light-grey w3-center w3-padding-16" id="coursework"> -->
+	<div class="w3-container w3-border-light-grey w3-center w3-row w3-center w3-light-grey w3-padding-16" id="coursework">
+		<div class="w3-container w3-center w3-padding-32">
+			<h3 style="font-size: 25px" class="w3-border-bottom w3-border-light-black w3-padding-16"> COURSEWORK</h3>
+		</div>
+		<div class="row">
+		  	<div align="left" class="column3">
+		  		<h1 style="font-size: 20px">COMPUTER SCIENCE:</h1>
+		  		<!-- <p style="font-size:15px;">Introduction to Machine Learning-<a href="https://people.eecs.berkeley.edu/~jrs/189/" title="CS 189 class website" target="_blank">Berkeley CS189</a></p> -->
+		  		<!-- <p style="font-size:15px;">Efficient Algorithms & Intractable Problems-<a href="https://cs170.org/" title="CS 170 class website" target="_blank">Berkeley CS170</a></p> -->
+				<p style="font-size:15px;">Introduction to Artificial Intelligence-<a href="https://inst.eecs.berkeley.edu/~cs188/fa23/" title="CS 188 class website" target="_blank">Berkeley CS188</a></p>
+				<p style="font-size:15px;">Computer Security-<a href="http://www-inst.eecs.berkeley.edu/~cs161/fa23/" title="CS 161 class website" target="_blank">Berkeley CS161</a></p>
+				<p>Great Ideas in Computer Architecture (Machine Structures)-<a href="http://www-inst.eecs.berkeley.edu/~cs61c/fa23/" title="CS 61C class website" target="_blank">Berkeley CS61C</a></p>
+				<p>Data Structures and Algorithms</p>
+			</div>
+			<div align="left" class="column3">
+				<h1 style="font-size: 20px">MATH:</h1>
+				<p>Complex Analysis and Integral Transformation</p>
+				<p>Linear Algebra & Geometry</p>
+				<p>Mathematical and physical equation</p>
+			</div>
+			<div align="left" class="column3">
+				<h1 style="font-size: 20px">ELECTRICAL ENGINEERING:</h1>
+				<!-- <p>Designing Information Systems I-<a href="http://inst.eecs.berkeley.edu/~ee16a/su17/" title="EE16A class website" target="_blank">EE16A</a></p>
+				<p>Designing Information Systems II-<a href="http://inst.eecs.berkeley.edu/~ee16b/fa17/" title="EE16B class website" target="_blank">EE16B</a></p> -->
+			  <p>Circuits</p>
+			  <p>Fundamentals of Electronic technology</p>
+			  <p>Electronic Technical Practice</p>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+<div class=row>
+	<h3 style="font-size: 40px"> </h3>
+</div>
+<!-- Projects Section -->
+<div class="w3-row-padding w3-light-grey w3-padding-16" >
+	<div class="w3-container w3-center w3-padding-32" id="projects">
+    	<h3 style="font-size: 25px" class="w3-border-bottom w3-border-light-black w3-padding-16">MY PROJECTS</h3>
+	</div>
 
-    <main>
-        <h1 id="hi">Hello!</h1>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <h3>Building RISC-V CPU</h3>
+    <a>
+      <img src="cpu.jpg" alt="CPU" style="width:100%";
+      height:42px;border:0;>
+    </a>    	
+  </div>
 
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <h3>SecureCloud DistribuShare</h3>
+    <a href="design.pdf" target="_blank">
+      <img src="security.jpg" alt="Secure" style="width:100%";
+      height:42px;border:0;>
+    </a>    	
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">   	
+    <h3>PACMAN</h3>
+    <a href="https://inst.eecs.berkeley.edu/~cs188/fa23/projects" target="_blank">
+      <img src="pacman_game.gif" alt="Pacman" style="width:100%";
+      height:42px;border:0;>
+    </a>
+  </div>
 
-        <p>
-            I'm currently a third-year undergraduate visiting student majoring in 
-            Computer Science at the <a href='https://berkeley.edu'>University of California, Berkeley</a>.
-             Upon completing my studies here, I'm set to graduate at 2025, with a 
-             Bachelor's degree in Computer Science from 
-             the <a href='https://www.xjtu.edu.cn'>Xi'an Jiaotong University</a>.
-        </p>
-
-        <p>
-            <!-- My interest lies in the area of <strong>NLP Beyond English</strong> (building 
-            high-performance low-resource language models), <strong>Information 
-                Extraction</strong>, and <strong>LLM Safety</strong>. -->
-        </p>
-
-        <p>
-            I previously served as an intern for two months at Apple Beijing, 
-            working with the machine learning team. Additionally, I 
-            participated in the Summer Workshop at the School of 
-            Computing, <a href="https://www.nus.edu.sg/">National University of Singapore</a>, 
-            focusing on Artificial Intelligence of Things (AIoT)
-        </p>
-
-        
-
-   
-
-
-        <div>
-
-           
-
-
-
-
-
-        </div>
-
-    </main>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <h3><b>CS61</b>ka<b>C</b>how</h3>
+    <a>
+      <img src="videoprocess.jpeg" alt="Video61c" style="width:100%";
+      height:42px;border:0;>
+    </a>    	
+  </div>
 
 </div>
+<div class='w3-row-padding w3-light-grey'>
+	<!-- <div class="w3-col l3 m6 w3-margin-bottom">
+      <p class="w3-opacity">[Spring 2019]</p>
+      <p>A discriminative, Logistic Regression learning model with BGD and SGD used to classify wines as red or white</p>    	
+    </div> -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <p class="w3-opacity">CS61C [Fall 2023]</p>
+      <p> Building a CPU that runs actual RISC-V instructions, and speed it up through pipelining.</p>    	
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <p class="w3-opacity">CS161 [Fall 2023]</p>
+      <p>Designed and implemented an end-to-end, encrypted file sharing system in Golang using RSA PKE, CTR Block Cipher data encryption with SHA-512 HMAC to provide confidentiality, integrity, and authenticity</p>    	
+    </div>	
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <p class="w3-opacity">CS188 [Fall 2023]</p>
+      <p>Use Artificial Intelligence algotighms such as Reinforcement Learning and Value Iteration Pacman agents to accomplish tasks optimally.</p>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom">
+      <p class="w3-opacity">CS61C [Fall 2023]</p>
+      <p>Use the multi-threads and multi-process programming paradigm to parallelize Convolutions in Video Processing</p>    	
+    </div>
+</div>
+<div class='w3-row-padding w3-light-grey'>
+
+   
+    <!-- <div class="w3-col l3 m6 w3-margin-bottom">    	
+      <h3>Brent & Nic: The Game</h3>
+      <a href="https://www.youtube.com/watch?v=EI5tgjyfwro" target="_blank">
+        <img src="gamePic.JPG" alt="the game" style="width:100%";
+        height:42px;border:0;>
+      </a>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">    	
+      <h3>Bear Maps</h3>
+      <a href="https://sp18.datastructur.es/materials/proj/proj3/proj3" target="_blank">
+        <image src="bearmaps.JPG" alt="bearmaps mapping" style="width:100%";
+        heigh:42px;border:0;>
+      </a>
+    </div> -->
+</div>
+<div class='w3-row-padding w3-light-grey'>
+	<div class="w3-col l3 m6 w3-margin-bottom">   	
+      <!-- <p class="w3-opacity">CS188 [Fall 2023]</p>
+      <p>Programmed Reinforcement Learning and Value Iteration Pacman agents to traverse various sets of mazes with unique layouts and accomplish tasks optimally.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">    	
+      <p class="w3-opacity">EE16B [Fall 2017]</p>
+      <p>SIXT33N is a three-wheel, intelligent, mobile robot that responds to specific voice input.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">    	
+      <p class="w3-opacity">CS61B [Spring 2018]</p>
+      <p>Designed a fully functional 2-D tile-based interactive game.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">    	
+      <p class="w3-opacity">CS61B [Spring 2018]</p>
+      <p>An online mapping application inspired by Google Maps. Supports user zooming, scrolling, and route finding.</p>
+    </div> -->
+</div>
+  <!-- Contact Section -->
+  <div class="w3-container w3-center w3-padding-32" id="contact">
+    <h3 style="font-size: 25px" class="w3-border-bottom w3-border-light-grey w3-padding-16">CONTACT</h3>
+    <p>Lets get in touch!</p>
+    <form action="bingsongtong@stu.xjtu.edu.cn" method="post" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
 </html>
